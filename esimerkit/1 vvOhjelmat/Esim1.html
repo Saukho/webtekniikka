@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>Javascript ominaisuuksia 1</h3>
+
+<p>
+    Javascript on ns. skriptauskieli, ei varsinainen ohjelmointikieli. <br>
+    Muuttujan sisällön tyyppi voi vaihdella kesken suorituksen !?! <br>
+    <br>
+    Huom: moderni Javascript: älä käytä var avainsanaa! <br>
+    &nbsp;&nbsp;&nbsp;- nykyisin on käytössä avainsanat let ja const <br>
+    Taikanäppäin F12: se avaa kehittäjän konsolin.
+</p>
+
+<script>
+    'use strict';         // ilman tätä ei huomata typoja!
+
+    document.write("Javascript-koodi sijoitetaan aina 'script' -tagin sisään <br>");
+
+    // esitellään muuttuja, sen tyyppinä on undefined.
+    let luku;
+
+    // asetetaan muuttujalle arvo, sen tyypiksi tulee number
+    luku = 3;
+
+    // tämä on skriptausta, muuttujan tyyppi on nyt string (?!?)
+    luku = "viisi";
+
+    luku += 3;        // luku = luku + 3 (eli teksti "viisi" ja sen perässä merkki 3)
+
+    // Tulostetaan muuttujan arvo web-sivulle, huom: rivinvaihto vakiotekstinä.
+    // Vakiotekstin erottimena voi olla ' tai ".
+    document.write("Muuttujan arvo on: " + luku + "<br>");
+    document.write('Ohjelma päättyi');
+</script>
+
+</body>
+</html>

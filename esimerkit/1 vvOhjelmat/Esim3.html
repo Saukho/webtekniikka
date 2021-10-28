@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math-kirjasto</title>
+</head>
+<body>
+
+<h3>Math-kirjaston käyttöä</h3>
+
+<script>
+    'use strict';
+
+    const MAX = 10;         // vakion määrittely
+
+    /*
+        Math-kirjastosta löytyy kaikki yleisimmät matemaattiset funktiot
+     */
+
+    document.write("Neliöjuuri luvusta 10 on " + Math.sqrt(10) + "<br> <br>");
+
+    document.write("Math.random() antaa desim. luvun väliltä 0 - 0,99999... <br>")
+    document.write("Math.random() antoi nyt: " + Math.random() + "<br> <br>");
+
+    // arvotaan kokonaisluku väliltä 1 ... MAX eli 1 ... 10
+    let arvottu = 1 + Math.floor( Math.random() * MAX);
+    document.write("Arvottu luku väliltä 1 - " + MAX + ": " + arvottu + "<br>");
+
+    // vastaava tulostus ${muuttujanNimi} tekniikalla,
+    // tulostus täytyy olla `...` merkkien sisällä.
+    arvottu = 1 + Math.floor( Math.random() * MAX);
+    document.write(`Arvottu luku väliltä 1 - ${MAX}: ${arvottu} <br>`);
+
+</script>
+
+</body>
+</html>

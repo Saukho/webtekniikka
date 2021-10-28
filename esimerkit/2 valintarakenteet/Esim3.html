@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js ja yhtäsuuruusvertailut</title>
+</head>
+<body>
+
+<h3>Kaksi yhtäsuuruusvertailua</h3>
+
+<!--
+    Javascriptissä yhtäsuuruusvertailu '==' on vaaran paikka.
+    Älä sotke sijoituslauseeseen '='.
+    2 erilaista yhtäsuuruusvertailua! Normaali '==' ja tarkempi '==='
+-->
+
+<script>
+    // toinen arvo on merkkijono, toinen numero
+    let a = "5", b = 5;
+
+    document.write("a = '5' (string) ja b = 5 (number)  <br> <br>");
+
+    if (a == b) {
+        document.write(" == sanoo: arvot ovat samat (vertailee vain muuttujien sisällön) <br>");
+    }
+
+    if (a === b) {
+        document.write(" === sanoo: arvot ovat samat  <br>");
+    } else {
+        document.write(" === sanoo: arvot eivät ole samat (tsekkaa lisäksi muuttujien tyypin) <br>");
+    }
+</script>
+
+</body>
+</html>

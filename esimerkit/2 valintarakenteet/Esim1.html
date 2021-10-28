@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If ja if-else</title>
+</head>
+<body>
+
+<script>
+    'use strict';
+
+    let luku, ika;      // käyttäjältä kysyttävät arvot
+
+    // Kysytään käyttäjältä luku ja kerrotaan että onko se parilinen ja alle 10.
+    // Looginen AND (&&) on vaativa: molempien puolien täytyy olla totta
+
+    alert("Kehaisen sinua, jos osaat antaa seuraavaan oikean arvon");
+    luku = +prompt("Yritä antaa parillinen luku, joka on alle 10");
+
+    if (luku % 2 == 0  &&  luku < 10) {
+        // annetaan kehut vain, jos molemmat ehdot ovat totta.
+        document.write("Hurraa, osasit! <br>");
+    }
+
+    // If-else: joko-tai rakenne. Suoritetaan aina jompi kumpi haara
+    ika = +prompt("Anna ikäsi");
+
+    if (ika >= 18) {
+        // tänne tullaan, jos ehto on totta
+        document.write("Tervetuloa bileisiin!");
+    }
+    else {
+        // tänne tullaan, jos ehto ei toteutunut
+        document.write("Go home, baby!");
+    }
+
+</script>
+
+</body>
+</html>
