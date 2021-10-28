@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 6</title>
+</head>
+<body>
+<h1>Tehtävä 6</h1>
+<p> keskiaikaiset mitat leivisköinä, nauloina ja luoteina</p>
+</body>
+<script>
+    'use strict';
+    let leiviska = parseFloat(prompt('Anna leiviskä lukuna'));
+    let naulat = parseFloat(prompt('Anna naulat lukuna'));
+    let luodit = parseFloat(prompt('Anna luodit lukuna'));
+
+    let kilot = luodit * 13.3 + naulat * 13.3 * 20 * 32 + leiviska * 20 * 32 * 13.3;
+    let kiloja = Math.floor(kilot/1000)
+    let grammat = (kilot/1000 - kiloja) * 1000 ;
+
+    document.write("Massa nykymittojen mukaan: " );
+    document.write("<br/>");
+
+    document.write(kiloja + " kilogrammaa ja " + grammat.toFixed(2) + " grammaa");
+
+</script>
+</html>
