@@ -6,9 +6,26 @@
 </head>
 <body>
 <h1>Tehtävä 3</h1>
+<p>Kirjoita ohjelma, joka kysyy käyttäjän sukupuolen ja hemobiiniarvon (g/l). </p>
+<p>Ohjelma ilmoittaa, onko hemobiiniarvo alhainen, normaali vai korkea</p>
+<h4>Hemoglobiinisi on</h4>
+
+
 </body>
 <script>
     'use strict';
+    let gender = prompt("Sukupuoli " + "\n" + "-mies" + "\n" +"-nainen")
+    let hemo = parseInt(prompt("Hemoglobiinisi (B-Hb)"))
 
-</script>
+    if (hemo < 134 && gender === 'mies' || hemo < 117 && gender === 'nainen' ) {
+        document.write("alhainen")
+    }else if (hemo >= 134 && hemo <= 195 && gender === 'mies' ||  hemo >= 117 && hemo <= 175 && gender === 'nainen' ){
+        document.write("normaali")
+    }else if (hemo > 195 && gender === 'mies' || hemo > 175 && gender === 'nainen'){
+        document.write("korkea")
+    }else{
+        alert("Annoithan oikeat arvot?")
+    }
+
+ </script>
 </html>
