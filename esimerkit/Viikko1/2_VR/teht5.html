@@ -6,9 +6,22 @@
 </head>
 <body>
 <h1>Tehtävä 5</h1>
+<p>Kirjoita ohjelma, joka tulostaa tekstin "Lasketaanko neliöjuuri?" varmistusikkunassa. </p>
+<p>Jos käyttäjä valitsee OK, ohjelma kysyy luvun ja laskee sekä tulostaa sen neliöjuuren. </p>
+<p>Jos käyttäjä valitsee Cancel, ohjelma tulostaa tekstin "Neliöjuurta ei lasketa."</p>
+<h4>Neliöjuuri antamastasi luvusta:</h4>
 </body>
 <script>
     'use strict';
-
+        if(confirm("Lasketaanko neliöjuuri?")) {
+            let num = prompt("Anna luku")
+            if (num >0){
+                document.write("Neliöjuuri " + num + ":sta on " + Math.sqrt(num))
+            }else {
+                alert("Negatiivisen luvun neliöjuurta ei voi laskea")
+            }
+            }else {
+            document.write("Neliöjuurta ei lasketa")
+        }
 </script>
 </html>
