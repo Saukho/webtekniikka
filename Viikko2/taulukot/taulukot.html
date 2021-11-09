@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Taulukot</title>
+    <link href="../../style.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="link-btn-back" href="../../index.html">Takaisin</a>
+<h1>Taulukot</h1>
+<section id="reversedNumbers">
+    <header>
+        <h2>1. Viisi lukua</h2>
+    </header>
+    <main>
+        <form>
+            <label for="numb">Anna luku 1</label>
+            <input id="numb" name="text" type="text"/>
+            <button
+                    onclick="backwardArray()"
+                    id="myBtn"
+                    type="button"
+                    value="paina">paina
+            </button>
+        </form>
+        <p id="text"></p>
+    </main>
+</section>
+<section id="participants">
+    <header>
+        <h2>2. Osallistujien määrä ja nimet taulukkoon</h2>
+    </header>
+    <main>
+        <form>
+            <label for="users">Osallistujien määrä</label>
+            <input id="users" name="text" type="text"/>
+            <button
+                    onclick="attenderArray()"
+                    id="attenderBtn"
+                    type="button"
+                    value="paina">paina
+            </button>
+        </form>
+        <span id="userList"></span>
+    </main>
+</section>
+<section id="reversedDogNames">
+    <header>
+        <h2>3. Kuuden koiran nimet aakkosjarjestykseen</h2>
+    </header>
+    <main>
+        <form>
+            <button
+                    onclick="dogsArr()"
+                    id="dogsBtn"
+                    type="button"
+                    value="paina">paina
+            </button>
+        </form>
+        <span id="dogsList"></span>
+    </main>
+</section>
+<section id="askZero">
+    <header>
+        <h2>4. Nolla lopettaa</h2>
+        <p>Tämän jälkeen ohjelma tulostaa luvut suurimmasta pienimpään</p>
+    </header>
+    <main>
+        <form>
+            <button
+                    onclick="reverseNums()"
+                    id="numsBtn"
+                    type="button"
+                    value="paina">Aloita
+            </button>
+        </form>
+        <span id="reverseList"></span>
+    </main>
+</section>
+<section id="numEarlier">
+    <header>
+        <h2>5. Annettu luku lopettaa</h2>
+        <p>Anna lukuja, jos olet antanut jo luvun aiemmin, ohjelma tulostaa numerot suurimmasta pienimpään</p>
+    </header>
+    <main>
+        <form>
+            <button
+                    onclick="givenNum()"
+                    id="numBtn"
+                    type="button"
+                    value="paina">Aloita
+            </button>
+        </form>
+        <span id="numList"></span>
+    </main>
+</section>
+<section id="medianNum">
+    <header>
+        <h2>6. Nolla lopettaa ja tulostaa mediaanin</h2>
+        <p>Anna lukuja, jos annat 0, ohjelma tulostaa mediaanin annettujen lukujen perusteella</p>
+    </header>
+    <main>
+        <form>
+            <button
+                    onclick="medianNum()"
+                    type="button"
+                    value="paina">Aloita
+            </button>
+        </form>
+        <span id="median"></span>
+    </main>
+</section>
+<section id="voteNum">
+    <header>
+        <h2>7. Äänestysohjelma</h2>
+    </header>
+    <main>
+        <form>
+            <button
+                    onclick="voteNum()"
+                    type="button"
+                    value="paina">Aloita
+            </button>
+        </form>
+        <span id="vote"></span>
+    </main>
+</section>
+<script src="script.js">
+</script>
+</body>
+</html>
+
+
+
