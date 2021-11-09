@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+<h1>Tehtävä 7</h1>
+<p> Kirjoita ohjelma, joka kysyy käyttäjältä tilin saldon sekä vuotuisen korkoprosentin.
+<p> Ohjelma ilmoittaa vuodessa kertyvän koron määrän sekä kasvaneen saldon, johon on lisätty vuosikorko.</p>
+    Kaikki rahasummat tulostetaan sentin tarkkuudella oikein pyöristettyinä</p>
+</body>
+<script>
+    'use strict';
+    let saldo = parseFloat(prompt('Anna tilin saldo: '));
+    let korko = parseFloat(prompt('Anna vuotuinen korkoprosentti: '));
+    let tulo;
+/*    function koronMaara (){
+       return korko * ( 1 + ( saldo/100))
+    }*/
+    function saldonMaara () {
+        tulo = (korko * ( 1 + ( saldo/100)))
+        return tulo + saldo
+    }
+
+
+    document.write("Vuosikorko: " + korko);
+    document.write("<br/>");
+    document.write("Alkusaldo: " + saldo);
+    document.write("<br/>");
+    document.write("Loppusaldo: " + saldonMaara(saldo));
+
+
+
+
+</script>
+</html>

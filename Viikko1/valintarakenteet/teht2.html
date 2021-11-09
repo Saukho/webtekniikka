@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 2</title>
+</head>
+<body>
+<h1>Tehtävä 2</h1>
+<p>Harry Potter -nuortenkirjoissa lajitteluhattu määrää Tylypahkan noitien ja velhojen koulun uuden oppilaan johonkin neljästä tuvasta, jotka ovat Rohkelikko, Luihuinen, Puuskupuh ja Korpinkynsi.</p>
+<p>Kirjoita sähköinen lajitteluhattu, joka kysyy oppilaan nimen ja arpoo tälle tuvan. Jos käyttäjä syöttää nimeksi esim. Anna, ohjelma ilmoittaa esimerkiksi "Anna, olet Korpinkynsi.</p>
+</body>
+<script>
+    'use strict';
+    let nimi = prompt("Oppilaan nimi: ")
+    let tupa = ["Rohkelikko", "Luihuinen", "Puuskupuh", "Korpinkynsi"]
+    let valittu = tupa[Math.floor(Math.random() * 4)]
+    document.write(nimi + ', olet ' +  valittu )
+</script>
+</html>

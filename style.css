@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Code+Pro&display=swap');
+/*font-family: 'Irish Grover', cursive;
+font-family: 'Roboto', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background: #eeeee4;
+}
+
+body {
+    position: relative;
+    background: #b3ddff;
+    max-width: 700px;
+    min-height: 100vh;
+    padding: 100px 20px 20px 20px;
+    margin: auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, strong, header{font-family: 'Roboto', sans-serif; margin: 20px 0 10px 0; }
+
+
+h1 { font-size: 50px; line-height: 1.25; }
+
+h2 { margin-top: 40px;
+    border-top-style: dashed;
+    border-top-width: 2px;
+    padding-top: 10px;
+    line-height: 1.4;
+    font-size: 28px
+}
+header{
+    font-size: 2rem;
+}
+li, ul {
+    margin: 10px;
+}
+ul{
+    margin: 20px;
+}
+
+
+nav{
+    display: flex;
+}
+a.link-btn{
+    background: #2f62b4;
+    border: 1px solid black;
+    margin: 12px 2px;
+    padding:4px;
+    font-size: 1.4rem;
+    color:#eeeee4;
+    text-align: center;
+}
+
+
+a.link-btn-back{
+    background: #000000;
+    padding: 2% 1%;
+    font-size: 120%;
+    color:#eeeee4;
+    float: right;
+    text-align: center;
+
+}
+
+
+form{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+input, button{
+    width: 40%;
+    padding: 10px 5px;
+    margin: 1.3rem 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+button{
+    background: #2f62b4;
+    border: 1px solid black;
+    margin: 12px 2px;
+    padding:2% 1%;
+    font-size: 1.4rem;
+    color: #eeeee4;
+    text-align: center;
+}
+p{
+    font-size:14px;
+    text-align: center;
+}
+nav {
+    display: flex;
+}
+a.link-btn-back {
+    background: #000000;
+    padding: 3% 2%;
+    font-size: 120%;
+    color: #eeeee4;
+    float: right;
+    text-align: center;
+}
+section{
+    padding: 4vh 0 3vh;
+    min-height: 40vh;
+}
+
+
+

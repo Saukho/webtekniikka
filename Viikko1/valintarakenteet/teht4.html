@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+<h1>Tehtävä 4</h1>
+<p>Kirjoita ohjelma, joka kysyy käyttäjältä lompakossa olevan rahamäärän ja bussilipun hinnan. </p>
+<p>Jos rahat riittävät bussilippuun, ohjelma vähentää lompakosta bussilipun hinnan ja toivottaa hyvää matkaa.</p>
+<p>Lopuksi (riittivätpä rahat tai ei) ohjelma ilmoittaa lompakkoon jäävän rahamäärän.</p>
+</body>
+<script>
+    'use strict';
+    let hasMoney = parseFloat(prompt("Paljon sinulla on rahaa lompakossasi?"))
+    let ticketPrice = parseFloat(prompt("Bussilipun hinta?"))
+    let leftMoney;
+
+    function moneyCounter(){
+        leftMoney = hasMoney - ticketPrice
+        return leftMoney;
+    }
+    moneyCounter(hasMoney)
+
+    if(leftMoney > 0){
+        document.write('Hyvää matkaa, sinulle jäi rahaa ' + moneyCounter(hasMoney) + '€')
+    }else{
+        alert('sinulla ei ollut rahaa bussilippuun')
+    }
+
+</script>
+</html>

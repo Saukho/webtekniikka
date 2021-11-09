@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+<h1>Tehtävä 3</h1>
+</body>
+<script>
+    'use strict';
+    let sade = parseInt(prompt('Anna ympyrän säde'));
+    function calculateCircumference() {
+        return Math.PI * sade * sade;
+    }
+
+    console.log(Math.PI);
+    // expected output: 3.141592653589793
+
+    console.log(calculateCircumference(sade));
+    document.write("Ympyrän pinta-ala " + calculateCircumference(sade));
+
+
+</script>
+</html>

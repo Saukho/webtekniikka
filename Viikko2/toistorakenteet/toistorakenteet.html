@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Kokonaisluku</title>
+    <link href="../../style.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="link-btn-back" href="../../index.html">Takaisin</a>
+<br>
+<br>
+<h3>Toistorakenteet</h3>
+<section id="kertoma">
+    <header>
+    <h2>Käyttäjän antaman luvun kertoma</h2>
+</header>
+    <main>
+        <form>
+            <label for="numb">Anna luku</label>
+            <input id="numb" name="text" type="text"/>
+            <button
+                    onclick="factorial()"
+                    id="myBtn"
+                    type="button"
+                    value="paina">paina
+            </button>
+        </form>
+        <p id="text"></p>
+    </main>
+</section>
+<section id="square">
+    <header>
+        <h2>Käyttäjän antaman luvun neliöjuuri</h2>
+    </header>
+    <main>
+        <form>
+            <label for="numb1">Anna luku</label>
+            <input id="numb1" name="text" type="text"/>
+            <button
+                    onclick="square()"
+                    id="myBtn1"
+                    type="button">
+                paina
+            </button>
+        </form>
+        <p id="text1"></p>
+    </main>
+</section>
+<section id="year">
+    <header>
+        <h2>Tarkista karkausvuodet</h2>
+    </header>
+    <main>
+        <form>
+            <label for="year1">Anna aloitusvuosi</label>
+            <input id="year1" name="number" type="text"/>
+            <label for="year2">Anna lopetusvuosi</label>
+            <input id="year2" name="number" type="text"/>
+            <button
+                    onclick="leapYears()"
+                    id="yearBtn"
+                    type="button"
+            >paina</button>
+        </form>
+        <span id="listYears"></span>
+    </main>
+</section>
+<section id="dice">
+    <header>
+        <h2>Arpakuutioiden lukumäärä ja luku yhteensä</h2>
+    </header>
+    <main>
+        <form>
+            <label for="dices">Arpakuutioiden lukumäärä?</label>
+            <input id="dices" name="number" type="text"/>
+            <button
+                    onclick="countDice()"
+                    id="diceBtn"
+                    type="button"
+            >paina</button>
+        </form>
+        <span id="countDicesVal"></span>
+    </main>
+</section>
+<section id="primenumber">
+    <header>
+        <h2>Alkuluvun tarkistaminen</h2>
+        <p>Alkulukuja ovat 2, 3, 5, 7, 11....</p>
+    </header>
+    <main>
+        <form>
+            <label for="prime">Tarkista onko luku alkuluku vai ei</label>
+            <input id="prime" name="number" type="number" min="4" max="9999999"/>
+            <button
+                    onclick="checkPrimes()"
+                    id="primeBtn"
+                    type="button"
+            >paina</button>
+        </form>
+        <span id="countIsPrime"></span>
+    </main>
+</section>
+<section id="diceodds">
+    <header>
+        <h2>Arpakuutioiden silmälukujen todennäköisyys</h2>
+        <p>Laske todennäköisyys antamiesi noppien summalle</p>
+    </header>
+    <main>
+        <form>
+            <button
+                    onclick="diceOdds()"
+                    id="oddsBtn"
+                    type="button"
+            >Laske</button>
+        </form>
+        <span id="calculateOdds"></span>
+    </main>
+</section>
+<section id="bingoCard">
+    <header>
+        <h2>Arvotaan numerot bingolappuun</h2>
+    </header>
+    <main>
+        <form>
+            <button
+                    onclick="bingoSheet()"
+                    type="button"
+            >Arvo numerot</button>
+        </form>
+        <span id="bet"></span><br>
+        <span id="bingo"></span>
+    </main>
+</section>
+<script src="script.js">
+</script>
+</body>
+</html>
+
+
+
